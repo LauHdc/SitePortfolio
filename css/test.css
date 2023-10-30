@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* Les variables -> $nomVariable : valeur 
+   
+couleurs (#)
+nombres
+chaînes de caractère
+booléens
+
+*/
+/*@mixin bloc($width, $height) {
+	
+	width: $width; height: $height; background-color: $accent; margin: 2em;
+}
+
+body {background-color: $base; color: $accent; font-family: sans-serif;}
+
+.bloc1 {@include bloc(200px, 200px); background-color: lightcoral;}
+
+.bloc2 {@include bloc(50px, 50px);}
+
+.bloc3 {@include bloc(100px, 150px);}
+
+*/
+body {
+  background-color: burlywood; }
+
+a {
+  color: saddlebrown;
+  font-size: 2em; }
+  a:hover {
+    background-color: firebrick;
+    color: black; }
+
+/*# sourceMappingURL=test.css.map */

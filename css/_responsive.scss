@@ -1,0 +1,51 @@
+@media screen and (max-width: 375px) {
+    
+    main {width: 375px}
+    header {width: 375px}
+    .carousel {text-align: center}
+    .col-md-2.text-center {display: flex; flex-direction: row; width: 50%}
+    .icone-compteur {width: 30px; height: 30px; border: none}
+    .icone-compteur i {font-size: 1em}
+    #compteur h5 {font-size: 1.5em}
+    #compteur h6 {font-size: 0.8em}
+    #portfolio {text-align: center}
+    #competences h3 {text-align: center}
+    #competences p {text-align: center}
+    .col-md-6 {text-align: center}
+    #actualites .icone-article {left: 170px}
+    #actualites article {text-align: center}
+    #actualites img {width: 375px}
+    #map .bandeau {width: 375px}
+    #map iframe {width: 370px}
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+    
+    main {width: 600px}
+    header {width: 600px}
+    .carousel img {width: 150px; height: 150px}
+    .col-md-2.text-center {display: flex; flex-direction: row; width: 50%}
+    .icone-compteur {width: 30px; height: 30px; border: none}
+    #portfolio {text-align: center}
+    #competences h3 {text-align: center}
+    #competences p {text-align: center}
+    #actualites .icone-article {left: 270px}
+    #actualites article {text-align: center}
+    #actualites img {margin-left: 150px}
+    #map .bandeau {width: 600px}
+    #map iframe {width: 550px}
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    
+    main {width: 768px}
+    header {width: 768px}
+    .carousel img {width: 150px; height: 150px}
+    #portfolio {text-align: center}
+    #temoignages p {font-size: 0.9em}
+    #actualites .icone-article {left: 55px}
+    #actualites img {width: 140px; height: 140px}
+    #map .bandeau {width: 768px}
+    #map iframe {width: 760px}
+
+}

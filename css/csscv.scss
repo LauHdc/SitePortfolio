@@ -1,0 +1,247 @@
+@import "setup";
+
+body {font-family: 'Montserrat', sans-serif;}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: #ffcc00; font-weight: bold;
+	&:hover {color: $accent}
+}
+
+h3 {font-size: 2em;}
+h4 {font-size: 1.5em; color: #ffcc00}
+
+/* Section header */
+
+header {
+	background: #ffa34d;
+	a {
+		color: black;
+ 		&:hover {color: #f7ff56}
+		&:active {color: #f7ff56}
+	}
+}
+
+ul {padding: 2em}
+
+.nav-pills .nav-link.active, .nav-pills .show .nav-link {background-color: #f7ff56}
+
+/* Overlay */
+
+.overlay::before {width: 100%; height: 100%; content: ""; background: url(images/noise1.png) repeat 0 0 rgba(0,0,0,
+0.5); top: 0; position: absolute;}
+
+/* Section présentation */
+
+#presentation {
+	
+	flex-direction: column; background-image: url("images/banner1.jpg") no-repeat 0 0 #000; height: 800px; background-size: cover; color: #f2f2f2; position: relative;
+
+& h1, & h2 {z-index: 1;}
+
+}
+
+.liens {z-index: 1}
+
+/* Section équipe */
+
+#equipe {flex-direction: column; margin-top: 2em;}
+.carousel {margin: 2% 0;}
+.flex {display: flex; flex-direction: column;}
+
+.vignette {width: 200px; height: 200px; border-radius: 50%; opacity: 0.5;}
+
+.vignette.active {transform: scale(1.2); opacity: 1;}
+
+.icone-users {width: 45px; height: 45px; background: #ffcc00; margin-bottom: 1.5em; transform: rotate(45deg); display: flex}
+
+.icone-users .fas {transform: rotate(-45deg); color: beige}
+#equipe p {margin-top: 1.5em}
+
+/* Section compteur */
+
+#compteur {
+	background: url("../images/banner2.jpg") no-repeat 0 0 #000 fixed; height: 250px; background-size: cover; color: #f1f1f1; position: relative; margin-top: 2em;
+	h5 {color: #ffcc00; font-size: 2em;}
+	h6 {text-transform: uppercase;}
+}
+
+.icone-compteur {
+	width: 60px; height: 60px; transform: rotate(45deg); border: 2px solid #fff; display: flex; justify-content: center; align-items: center; margin: auto; margin-bottom: 1.5em;
+	i {transform: rotate(-45deg);}
+}
+
+/* Section portfolio */
+
+#portfolio {
+	
+	margin-top: 2em;
+ 	
+	figure {
+		
+		flex: 1; position: relative;
+		img {width: 260px; height: 200px;}
+	
+	}
+
+ figcaption {position: absolute; top: 0; color: #f1f1f1; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 200px; width: 260px; font-size: 0.6em; background: url(images/noise1.png) repeat 0 0 scroll rgba(0,0,0,0.3); opacity: 0; transition: all 1s;}
+
+ a:hover figcaption {opacity: 1;}
+	
+
+}
+
+/* Section témoignages */
+
+#temoignages {
+	background: url(images/banner3.jpg) no-repeat 0 0 fixed; height: 350px; background-size: cover; color: #f1f1f1; position: relative; margin-top: 2em;
+	img {width: 100px; height: 100px; border-radius: 50%; margin-top: 2em; margin-bottom: 2em;}
+	span {font-style: italic;}
+}
+
+
+/* Section compétences */
+
+#competences {margin-top: 1.5em; margin-bottom: 1.5em}
+
+    /* Progress bar */
+
+.progress {width: 95%; height: 35px; background-color: lightgrey; position: relative; margin-bottom: 2%;}
+
+@mixin progress-bar {
+	background-color: #ffcc00; height: 35px; animation: barre-animee 5s 1; animation: barre-animee2 5s 1; animation: barre-animee3 5s 1; animation: barre-animee4 5s 1;
+}
+
+.barre1 {@include progress-bar; width: 70%;}
+
+.barre2 {@include progress-bar; width: 80%;}
+
+.barre3 {@include progress-bar; width: 45%;}
+
+.barre4 {@include progress-bar; width: 50%;}
+
+
+.progress-bar::after {
+    content:""; border-left: 15px solid #ffcc00; border-bottom: 15px solid transparent; border-top: 19px solid transparent; position: absolute; top: 0;
+}
+
+.barre1::after {left: 70%; animation: triangle 5s 1;}
+
+.barre2::after {left: 80%; animation: triangle2 5s 1;}
+
+.barre3::after {left: 45%; animation: triangle3 5s 1;}
+
+.barre4::after {left: 50%; animation: triangle4 5s 1;}
+
+@keyframes barre-animee {
+    0% {width: 0%}
+    100% {width: 70%}
+}
+
+@keyframes triangle {
+    0% {left: 0%;}
+    100% {left: 70%;}
+}
+
+@keyframes barre-animee2 {
+    0% {width: 0%}
+    100% {width: 80%}
+}
+
+@keyframes triangle2 {
+    0% {left: 0%;}
+    100% {left: 80%;}
+}
+
+@keyframes barre-animee3 {
+    0% {width: 0%;}
+    100% {width: 45%}
+}
+
+@keyframes triangle3 {
+    0% {left: 0%;}
+    100% {left: 45%;}
+}
+
+@keyframes barre-animee4 {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+
+@keyframes triangle4 {
+    0% {left: 0%}
+    100% {left: 50%;}
+}
+
+.texte-barre {opacity: 1; animation: texte 5s 1;}
+@keyframes texte {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Section actualités */
+
+#actualites {background: #f0f0f0;
+
+ article {
+	 
+	background: #fff; border-top: 5px solid #ffcc00; padding: 1em; margin-bottom: 3em; position: relative; margin-top: 2em;
+ 	a {font-size: 0.6em;}
+ 	span {font-size: 0.8em;}
+	p {font-size: 0.9em; margin-bottom: 2em;}
+	
+	}
+
+figure {margin-bottom: -15%; width: 375px;}
+
+h4 {margin-top: 1em;}
+
+.icone-users {margin-top: 2em}
+
+.icone-article {width: 35px; height: 35px; background: #ffcc00; margin-bottom: 1.5em; transform: rotate(45deg); display: flex; position: absolute; left: 120px; top: -20px;}
+
+.fas.icone-liens {color: $accent; transform: rotate(360deg);}
+
+.fas {transform: rotate(-45deg); color: beige;}
+	
+}
+
+/* Section map */
+
+#map {flex-direction: column}
+.bandeau {background: #ffcc00}
+.bandeau h6 {color: #f1f1f1; font-size: 2em; text-transform: uppercase; padding: 0.5em;}
+
+#contact form {width: 100%}
+input[type="submit"] {width: 100%}
+
+/* section contact */
+
+#contact {margin-top: 2em}
+
+/* Section footer */
+
+footer {
+	
+	flex-direction: column; background: $accent; border-top: 5px solid #f7ff56; margin-top: 2em; padding-bottom: 2em;
+	h6 {font-size: 1em; color: #f7ff56; padding: 1em; color: black;}
+
+}
+
+.social {
+	
+	.fab {color: black}
+	
+ 	span {width: 35px; height: 35px; background: #f7ff56; transform: rotate(45deg); margin: 0.6em; display: flex; justify-content: center; align-items: center;}
+	
+ 	i {transform: rotate(-45deg);}
+
+	span:hover {background: $accent; border: 1px solid #f7ff56;}
+	
+}
+
+.etiquette {width: 10em; background: #f7ff56; border-radius: 0 0 6% 6%; margin-bottom: 1.5em;}
+
+@import "responsive";

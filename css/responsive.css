@@ -1,0 +1,62 @@
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    
+	header {width: 575px;}
+	header img {margin: 10px;}
+	header nav {margin: -10px;}
+	
+	#presentation {width: 575px;}
+	#presentation h1 {margin-left: -50px;}
+	#presentation h2 {margin-left: -50px;}
+	.liens {margin-left: -50px;}
+	
+	#equipe {width: 575px;}
+	.icone-users {margin-left: -50px;}
+	#equipe h3 {margin-left: -50px;}
+	#equipe h4 {margin-left: -50px;}
+	.carousel {margin-left: -57px;}
+	#equipe p {margin-left: 15px; text-align: center; margin-right: 70px;}
+	
+	#compteur {width: 575px;}
+	.col-md-2.text-center {display: table-row; margin-left: -15px;}
+	.icone-compteur {margin-top: 15px; margin-left: 116px;}
+	#compteur h5 {margin-top: -15px;}
+	#compteur h6 {margin-top: -7px;}
+	
+	#portfolio {width: 575px;}
+	#portfolio h3 {margin-left: -50px;}
+	#portfolio h4 {margin-left: -50px;}
+	#portfolio p {margin-left: 15px; text-align: center; margin-right: 70px;}
+	#portfolio figure {margin-left: -45px;}
+	
+	#temoignages {width: 575px;}
+	#temoignages img {margin-left: -50px;}
+	#temoignages p {margin-left: 15px; text-align: center; margin-right: 70px;}
+	#temoignages span {margin-left: -50px;}
+	
+	#competences {width: 575px; margin-left: -43px;}
+	#competences p {margin-left: 25px; text-align: center; margin-right: 25px;}
+	.competences {margin-left: 50px;}
+	.texte {margin-left: 25px;}
+	
+	#actualites {width: 575px;}
+	#actualites h3 {margin-left: -50px;}
+	#actualites h4 {margin-left: -50px;}
+	#actualites p {margin-left: 10px; text-align: center; margin-right: 65px;}
+	.icone-article {margin-left: -40px;}
+	#actualites figure  {margin-left: -150px;}
+	figure img {margin: 0;}
+	
+	#map {width: 575px;}
+	#map h6 {margin-left: -80px;}
+	
+	#contact {width: 575px;}
+	#contact h3 {margin-left: -50px;}
+	#contact h4 {margin-left: -50px;}
+	#contact p {margin-left: 10px; text-align: center; margin-right: 65px;}
+	
+	footer {width: 575px;}
+	.etiquette {margin-left: -50px;}
+	.social {margin-left: -65px;}
+	
+}
+
